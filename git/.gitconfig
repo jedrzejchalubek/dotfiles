@@ -1,0 +1,34 @@
+[include]
+	path = ~/.config/.gitconfig.local
+
+[user]
+    name = Jędrzej Chałubek
+    email = jedrzej.chalubek@gmail.com
+
+[core]
+    editor = vim
+	excludesfile = ~/.gitignore
+
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = auto
+	ui = true
+	pager = true
+
+[alias]
+	st = status
+	br = branch
+	co = checkout
+	df = diff
+	# Sneak changes into your previous commit
+	sneak = commit -a --amend --no-edit
+	# See today’s work
+	today = log --since=\"00:00:00\" --all --no-merges --oneline --author=jedrzej.chalubek@gmail.com
+
+[pull]
+    rebase = true
+
+[push]
+    default = simple
