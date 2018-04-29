@@ -18,10 +18,6 @@
 	pager = true
 
 [alias]
-	st = status
-	br = branch
-	co = checkout
-	df = diff
 	# Sneak changes into your previous commit
 	sneak = commit -a --amend --no-edit
 	# See today’s work
