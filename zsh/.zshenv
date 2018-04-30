@@ -1,5 +1,5 @@
-export VISUAL=subl
-export EDITOR=vim
+export VISUAL=nvim
+export EDITOR=nvim
 export PATH=$PATH:~/bin:/usr/local/bin
 
 env_config_files=(~/.zsh/**/*.zshenv(N))

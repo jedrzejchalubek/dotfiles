@@ -9,8 +9,8 @@ alias mkdir="mkdir -p"
 
 alias cp="cp -r"
 
-alias v="vim"
-alias vi="vim"
+alias v="nvim"
+alias vi="nvim"
 
 alias g="git"
 alias ga="git add"
