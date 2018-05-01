@@ -1,7 +1,7 @@
 default: install
 
 install:
-	stow git zsh vim
+	stow xrdb git zsh vim
 	
 uninstall:
-	stow -D git zsh vim
+	stow -D xrdb git zsh vim
