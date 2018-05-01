@@ -22,8 +22,8 @@ My dotfiles priorities simplicity of installation and ease of deployment on both
 
 My dotfiles requires `git` and `make` libraries for installation. Make sure you have both on your machine before starting.
 
-- `sudo pacman -S git make`
-- `brew install git make`
+- Arch: `sudo pacman -S git make`
+- OSX: `brew install git make`
 
 ## Installation
 
@@ -54,7 +54,7 @@ $ make
 
 ```bash
 # Go to environment specific directory ...
-$ cd ~/.dotfiles/@macos
+$ cd ~/.dotfiles/@arch
 
 # ... and run `make` at ~/.dotfiles
 $ make
