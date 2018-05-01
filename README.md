@@ -15,12 +15,12 @@ My dotfiles priorities simplicity of installation and ease of deployment on both
 
 ##### Directories naming convention
 
-- config files are grouped in domain named directories
-- leading `@` directories contains config for specified environments, eg. `@macos`
+- leading `=` for non linked directories, eg `=pacman` meaning that these directories are not stowed
+- leading `@` directories contains setup for specified environments, eg. `@macos`
 
 ## Preparations
 
-My dotfiles require only `git` and `make` libraries for installation. Make sure you have both on your machine before starting.
+My dotfiles requires `git` and `make` libraries for installation. Make sure you have both on your machine before starting.
 
 - `sudo pacman -S git make`
 - `brew install git make`

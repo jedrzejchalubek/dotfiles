@@ -1,7 +1,9 @@
+autojump
 openssh
 stow
-neovim
 nodejs
 npm
 php
 composer
+vagrant
+docker

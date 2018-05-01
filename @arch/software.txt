@@ -1,0 +1,8 @@
+neovim
+virtualbox
+google-chrome
+opera
+firefox
+lastpass
+filezilla
+spotify
