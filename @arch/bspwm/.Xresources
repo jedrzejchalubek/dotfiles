@@ -1,4 +1,4 @@
-#include <~/.xrdb/oceanic-next.Xcolors>
+#include ".xrdb/oceanic-next"
 
 URxvt*allow_bold: true
 URxvt*font: xft:Noto Sans Mono:size=12
