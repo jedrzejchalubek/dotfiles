@@ -1,5 +1,4 @@
 autojump
-openssh
 stow
 nodejs
 npm

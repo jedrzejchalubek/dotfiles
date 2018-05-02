@@ -13,14 +13,17 @@ $$$$$$$/   $$$$$$/     $$$$/  $$/       $$/ $$/  $$$$$$$/ $$$$$$$/
 
 My dotfiles priorities simplicity of installation and ease of deployment on both Linux and MacOS. To achieve this they use [GNU stow](https://www.gnu.org/software/stow/) for manage configuration and [GNU make](https://www.gnu.org/software/make/) for setup.
 
-##### Directories naming convention
+## Introduction
 
-- leading `=` for non linked directories, eg `=pacman` meaning that these directories are not stowed
+I wanted to keep my dotfiles stupid simple, no fancy installation or bootstrapping shell scripts. All is tied-up with easy to follow symlinks and makefiles.
+
+##### Directories naming:
+- lowercase directories contain dotfiles, these folders are being stowed
 - leading `@` directories contains setup for specified environments, eg. `@macos`
 
 ## Preparations
 
-My dotfiles requires `git` and `make` libraries for installation. Make sure you have both on your machine before starting.
+My dotfiles require `git` and `make` libraries for installation. Make sure you have both on your machine before starting.
 
 - Arch: `sudo pacman -S git make`
 - OSX: `brew install git make`
@@ -40,10 +43,10 @@ Let's go through an example process of configuring a new MacOS computer.
 git clone git@github.com:jedrzejchalubek/dotfiles.git ~/.dotfiles
 ```
 
-2. Go to the previously cloned directory and run general `Makefile`:
+2. Go to the previously cloned directory and run main `Makefile`:
 
 ```bash
-# Change previously cloned dotfiles location ...
+# Move to the previously cloned repository ...
 $ cd ~/.dotfiles
 
 # ... and run `make` at ~/.dotfiles
@@ -54,7 +57,7 @@ $ make
 
 ```bash
 # Go to environment specific directory ...
-$ cd ~/.dotfiles/@arch
+$ cd ~/.dotfiles/@macos
 
 # ... and run `make` at ~/.dotfiles
 $ make

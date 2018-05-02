@@ -1,0 +1,14 @@
+google-chrome
+firefox
+opera
+sequel-pro
+sublime-text
+virtualbox
+alfred
+slack
+steam
+transmission
+handbake
+xld
+lastpass
+vlc

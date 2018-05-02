@@ -1,0 +1,9 @@
+stow
+autojump
+git
+php71
+node
+composer
+vagrant
+docker
+docker-machine
