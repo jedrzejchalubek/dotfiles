@@ -1,3 +1,4 @@
+base-devel
 autojump
 stow
 nodejs
@@ -6,3 +7,4 @@ php
 composer
 vagrant
 docker
+neovim

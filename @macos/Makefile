@@ -1,13 +1,33 @@
-default: 
-	configure_defaults 
-	install_homebrew 
+default: \
+	install_defaults \
+	install_homebrew \
 	run_homebrew
 
-configure_defaults:	
+install_homebrew:
+	# Install Homebrew, if it's not already installed
+	if test ! $(which brew); then
+	  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+	fi
+
+run_homebrew:
+	# Tap additional repositories
+	brew tap 'homebrew/php'
+	brew tap 'caskroom/cask'
+	brew tap 'caskroom/fonts'
+	# Install packages and libraries
+	brew install `cat packages.txt`
+	# Install programs
+	brew cask install `cat software.txt`
+	# Install non-standard fonts
+	brew cask install `cat fonts.txt`
+	
+install_defaults:	
 	# Set standby delay to 24 hours (default is 1 hour)
 	sudo pmset -a standbydelay 86400
 	# Disable the sound effects on boot
 	sudo nvram SystemAudioVolume=" "
+	# Show the ~/Library folder
+	chflags nohidden $HOME/Library
 	# Disable press-and-hold for keys in favor of key repeat.
 	defaults write -g ApplePressAndHoldEnabled -bool false
 	# Set a really fast key repeat.
@@ -38,8 +58,6 @@ configure_defaults:
 	# Use list view in all Finder windows by default
 	# Four-letter codes for the other view modes: `icnv`, `clmv`, `Flwv`
 	defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
-	# Show the ~/Library folder
-	chflags nohidden $HOME/Library
 	# Auto hide menu bar
 	defaults write NSGlobalDomain _HIHideMenuBar -bool true
 	# Enable highlight hover effect for the grid view of a stack (Dock)
@@ -71,21 +89,3 @@ configure_defaults:
 	defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 	# Prevent Photos from opening automatically when devices are plugged in
 	defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
-	
-install_homebrew:
-	# Test if we have a Homebrew, if not install from source.
-	if test ! $(which brew); then
-	  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-	fi
-
-run_homebrew:
-	# Tap additional repositories
-	brew tap 'homebrew/php'
-	brew tap 'caskroom/cask'
-	brew tap 'caskroom/fonts'
-	# Install packages and libraries
-	brew install $(cat packages.txt)
-	# Install programs
-	brew cask install $(cat software.txt)
-	# Install non-standard fonts
-	brew cask install $(cat fonts.txt)

@@ -1,8 +1,6 @@
-neovim
-virtualbox
 google-chrome
 opera
 firefox
-lastpass
+virtualbox
 filezilla
 spotify
