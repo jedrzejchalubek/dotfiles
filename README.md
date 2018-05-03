@@ -9,16 +9,11 @@ $$ |__$$ |$$ \__$$ |  $$ |/  |$$ |      $$ |$$ |$$$$$$$$/  $$$$$$  |
 $$    $$/ $$    $$/   $$  $$/ $$ |      $$ |$$ |$$       |/     $$/ 
 $$$$$$$/   $$$$$$/     $$$$/  $$/       $$/ $$/  $$$$$$$/ $$$$$$$/  
 
-about:  My dotfiles for Linux and MacOS
-author: Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (https://jedrzejchalubek.com)
-
 ```
-
-My dotfiles priorities simplicity of installation and ease of deployment on both Linux and MacOS. To achieve this they use [GNU stow](https://www.gnu.org/software/stow/) for manage configuration and [GNU make](https://www.gnu.org/software/make/) for setup.
 
 ## Introduction
 
-I wanted to keep my dotfiles stupid simple, no fancy installation or bootstrapping shell scripts. All is tied-up with easy to follow symlinks and makefiles.
+My dotfiles priorities simplicity of installation and ease of deployment on both Linux and MacOS. To achieve this they use [GNU stow](https://www.gnu.org/software/stow/) for manage configuration and [GNU make](https://www.gnu.org/software/make/) for setup.
 
 ##### Directories naming:
 - lowercase directories contain dotfiles, these folders are being stowed

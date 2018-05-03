@@ -4,7 +4,6 @@ opera
 sequel-pro
 sublime-text
 virtualbox
-alfred
 slack
 steam
 transmission
@@ -12,3 +11,8 @@ handbake
 xld
 lastpass
 vlc
+qlcolorcode
+qlstephen
+qlmarkdown
+qlimagesize
+qlvideo
