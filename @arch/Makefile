@@ -1,11 +1,14 @@
-default: \
-	run_stow \
-	run_pacman
+DIRECTORIES = bspwm urxvt
 
-run_stow:
-	stow bspwm urxvt
+default: link install
 
-run_pacman:
+link:
+	stow $(DIRECTORIES)
+
+unlink:
+	stow -D $(DIRECTORIES)
+
+install:
 	sudo pacman -Sy yaourt --needed --noconfirm
 	sudo pacman -S --needed --noconfirm `cat packages.txt`
 	yaourt -S --needed --noconfirm `cat software.txt`

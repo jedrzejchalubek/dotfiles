@@ -25,6 +25,7 @@ defaults write com.apple.dock no-bouncing -bool true
 dockutil --no-restart --remove all
 dockutil --no-restart --add "/Applications/Google Chrome.app"
 dockutil --no-restart --add "/Applications/Utilities/Terminal.app"
+dockutil --no-restart --add "/Applications/Sequel Pro.app"
 dockutil --no-restart --add "/Applications/Spotify.app"
 
 killall Dock
