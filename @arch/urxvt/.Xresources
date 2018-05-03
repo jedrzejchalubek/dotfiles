@@ -3,10 +3,10 @@
 URxvt*letterSpace: 0
 URxvt*lineSpace: 3 
 URxvt*allow_bold: true
-URxvt*font: xft:Fira Code:size=12,xft:symbola:size=12:antialiase=true
-URxvt*boldFont: xft:Fira Code:bold:size=12:antialiase=true
-URxvt*italicFont: xft:Fira Code:italic:size=12:antialiase=true
-URxvt*boldItalicFont: xft:Fira Code:bold:italic:size=12:antialiase=true
+URxvt*font: xft:Fira Code:size=14,xft:symbola:size=14:antialiase=true
+URxvt*boldFont: xft:Fira Code:bold:size=14:antialiase=true
+URxvt*italicFont: xft:Fira Code:italic:size=14:antialiase=true
+URxvt*boldItalicFont: xft:Fira Code:bold:italic:size=14:antialiase=true
 
 URxvt*scrollBar: false
 URxvt*transparent: false
