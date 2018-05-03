@@ -1,3 +1,9 @@
-" use vim settings, rather than vi settings
-" must be first, because it changes other options as a side effect
-set nocompatible
+" Set <Leader> key to comma
+let mapleader = ','
+
+" Enable incremental live searching and highlighting
+set hlsearch
+set incsearch
+if has('nvim')
+  set inccommand = split
+endif
