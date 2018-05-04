@@ -12,7 +12,10 @@ augroup end
 set number relativenumber
 
 " mattn/emmet-vim
-let g:user_emmet_install_global = 0
-let g:user_emmet_expandabbr_key='<tab>'
-autocmd FileType html,css,sass,scss EmmetInstall
-imap <expr> <tab> emmet#expandAbbrIntelligent('\<tab>')
+augroup emmet
+  au!
+  let g:user_emmet_install_global = 0
+  let g:user_emmet_expandabbr_key='<tab>'
+  autocmd FileType html,css,sass,scss EmmetInstall
+  autocmd FileType html,css,sass,scss imap <expr> <tab> emmet#expandAbbrIntelligent('\<tab>')
+augroup end
