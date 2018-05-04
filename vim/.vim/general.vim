@@ -1,6 +1,3 @@
-" Enable latest Vim options and settings
-set nocompatible
-
 " Set <Leader> key to comma
 let mapleader=','
 
