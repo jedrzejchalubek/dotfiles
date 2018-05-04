@@ -11,6 +11,9 @@ endif
 
 call plug#begin('~/.vim/plugged')
 
+Plug 'mattn/emmet-vim'
+Plug 'tpope/vim-surround'
+Plug 'jiangmiao/auto-pairs'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
 
 call plug#end()
