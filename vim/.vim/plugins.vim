@@ -11,6 +11,7 @@ endif
 
 call plug#begin('~/.vim/plugged')
 
+Plug 'w0rp/ale'
 Plug 'mattn/emmet-vim'
 Plug 'itchyny/lightline.vim'
 Plug 'itchyny/vim-gitbranch'
@@ -19,5 +20,6 @@ Plug 'tpope/vim-surround'
 Plug 'jiangmiao/auto-pairs'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
 Plug 'terryma/vim-multiple-cursors'
+Plug 'mhartington/oceanic-next'
 
 call plug#end()
