@@ -23,5 +23,6 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'jedrzejchalubek/oceanic-next.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-commentary'
+Plug 'easymotion/vim-easymotion'
 
 call plug#end()
