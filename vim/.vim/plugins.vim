@@ -20,6 +20,6 @@ Plug 'tpope/vim-surround'
 Plug 'jiangmiao/auto-pairs'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
 Plug 'terryma/vim-multiple-cursors'
-Plug 'mhartington/oceanic-next'
+Plug 'jedrzejchalubek/oceanic-next.vim'
 
 call plug#end()
