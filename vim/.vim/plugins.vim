@@ -21,5 +21,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'jedrzejchalubek/oceanic-next.vim'
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-commentary'
 
 call plug#end()

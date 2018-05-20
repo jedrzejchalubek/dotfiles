@@ -92,3 +92,7 @@ let g:ale_sign_column_always = 1
 let g:ale_sign_error = '×-'
 let g:ale_sign_warning = '•-'
 
+" vim-gitgutter
+let g:gitgutter_sign_added = '+'
+let g:gitgutter_sign_modified = '•'
+let g:gitgutter_sign_removed = '×'

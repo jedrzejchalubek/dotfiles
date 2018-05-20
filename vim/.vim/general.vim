@@ -26,3 +26,6 @@ set incsearch
 if has('nvim')
   set inccommand=split
 endif
+
+" Update more fluently
+set updatetime=100

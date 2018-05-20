@@ -1,3 +1,6 @@
+" Enable signs columns
+set signcolumn=yes
+
 " syntax highlighting
 syntax enable
 if (has("termguicolors"))
