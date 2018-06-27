@@ -1,7 +1,11 @@
+" ============================================================
 " jeffkreeftmeijer/vim-numbertoggle
+" ============================================================
 set number relativenumber
 
+" ============================================================
 " mattn/emmet-vim
+" ============================================================
 augroup emmet
   au!
   let g:user_emmet_install_global = 0
@@ -9,8 +13,9 @@ augroup emmet
   autocmd FileType html,css,sass,scss imap <buffer> <expr> <tab> emmet#expandAbbrIntelligent('\<C-y>')
 augroup end
 
+" ============================================================
 " itchyny/lightline.vim
-
+" ============================================================
 let g:lightline = {
 \   'colorscheme': 'oceanicnext',
 \   'active': {
@@ -72,7 +77,9 @@ endfunction
 
 autocmd User ALELint call lightline#update()
 
+" ============================================================
 " terryma/vim-multiple-cursors
+" ============================================================
 let g:multi_cursor_use_default_mapping=0
 
 let g:multi_cursor_start_word_key      = '<C-n>'
@@ -84,7 +91,9 @@ let g:multi_cursor_prev_key            = '<C-p>'
 let g:multi_cursor_skip_key            = '<C-x>'
 let g:multi_cursor_quit_key            = '<Esc>'
 
+" ============================================================
 " w0rp/ale
+" ============================================================
 let g:ale_lint_delay = 0
 let g:ale_lint_on_enter = 1
 let g:ale_lint_on_save = 1
@@ -92,7 +101,9 @@ let g:ale_sign_column_always = 1
 let g:ale_sign_error = '×-'
 let g:ale_sign_warning = '•-'
 
+" ============================================================
 " vim-gitgutter
+" ============================================================
 let g:gitgutter_sign_added = '+'
 let g:gitgutter_sign_modified = '•'
 let g:gitgutter_sign_removed = '×'

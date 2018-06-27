@@ -1,4 +1,6 @@
+" ==================================================================
 " Set runtime to .vim directory, so neovim can properly run autoload
+" ==================================================================
 set runtimepath+=~/.vim/
 
 if empty(glob('~/.vim/autoload/plug.vim'))
