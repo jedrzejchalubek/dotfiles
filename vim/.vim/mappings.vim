@@ -41,3 +41,19 @@ augroup emptytagcarriage
   au!
   autocmd FileType html,xml inoremap <expr> <cr> strpart(getline('.'), col('.')-2, 1) =~ '[>]' ? '<cr><esc>O' : '<cr>'
 augroup end
+
+" ============================================================
+" FZF searching mappings
+" ============================================================
+function! GFilesWithFallback()
+  let output = system('git rev-parse --is-inside-work-tree') =~ 'true' ? 'GFiles' : 'Files'
+  let prefix = get(g:, 'fzf_command_prefix', '')
+  if v:shell_error == 0
+    exec "normal :" . prefix . "GFiles\<CR>"
+  else
+    exec "normal :" . prefix . "Files\<CR>"
+  endif
+  return 0
+endfunction
+
+nnoremap <c-p> :call GFilesWithFallback()<CR>

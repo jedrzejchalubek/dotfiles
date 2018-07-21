@@ -5,3 +5,5 @@ for file in ${config_files}
 do
   source $file
 done
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
