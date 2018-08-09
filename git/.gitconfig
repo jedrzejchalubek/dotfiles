@@ -23,7 +23,9 @@
 	# Sneak changes into your previous commit
 	sneak = commit -a --amend --no-edit
 	# See today’s work
-	today = log --since=\"00:00:00\" --all --no-merges --oneline --author=jedrzej.chalubek@gmail.com
+	today = log --since=\"00:00:00\" --all --no-merges --oneline --author=$(git config user.email)
+	# See work backlog in easiy to share format
+	backlog = log --pretty='- %s %Cgreen[%ad]%Creset' --all --no-merges --date=short --author=$(git config user.email)
 
 [pull]
     rebase = true
