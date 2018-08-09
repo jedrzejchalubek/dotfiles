@@ -2,11 +2,11 @@
 	path = ~/.config/.gitconfig.local
 
 [user]
-    name = Jędrzej Chałubek
-    email = jedrzej.chalubek@gmail.com
+	name = Jędrzej Chałubek
+	email = jedrzej.chalubek@gmail.com
 
 [core]
-    editor = nvim
+	editor = nvim
 	excludesfile = ~/.gitignore
 
 [color]
@@ -28,7 +28,7 @@
 	backlog = log --pretty='- %s %Cgreen[%ad]%Creset' --all --no-merges --date=short --author=$(git config user.email)
 
 [pull]
-    rebase = true
+	rebase = true
 
 [push]
-    default = simple
+	default = simple
