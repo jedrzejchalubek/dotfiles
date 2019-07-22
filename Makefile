@@ -1,13 +1,13 @@
-DIRECTORIES = xrdb git zsh vim
+DIRECTORIES = xrdb git zsh zplug vim
 
 default: link install
 
 link:
 	# First, we'll start with stow dotfiles itself.
-	# They're responsible for filtering files 
+	# They're responsible for filtering files
 	# of directories stowed in next step.
 	stow stow
-	# After that, we can collectively 
+	# After that, we can collectively
 	# stow rest of the dotfiles.
 	stow $(DIRECTORIES)
 
