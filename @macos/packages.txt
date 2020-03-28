@@ -1,9 +1,12 @@
 stow
 autojump
 git
-php71
+php73
+python
+python3
 node
 composer
 vagrant
 docker
 docker-machine
+neovim

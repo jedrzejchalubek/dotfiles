@@ -27,10 +27,10 @@ nnoremap <esc><esc> :set invhlsearch<cr>
 nnoremap / :set hlsearch<cr>/
 
 " ============================================================
-" Adds properly idented new line when entering <cr> 
-" in HTML tag with empty content, for example: 
-" 
-" Pressing enter in 
+" Adds properly idented new line when entering <cr>
+" in HTML tag with empty content, for example:
+"
+" Pressing enter in
 "   <div>|</div>
 " markup will reformat it to
 "   <div>
@@ -55,5 +55,25 @@ function! GFilesWithFallback()
   endif
   return 0
 endfunction
-
 nnoremap <c-p> :call GFilesWithFallback()<CR>
+
+" ============================================================
+" NERDTree toggle visibility
+" ============================================================
+map <c-b> :NERDTreeToggle<CR>
+
+" ============================================================
+" Deoplete Completions
+" ============================================================
+"Autocomplete and cycle from top-to-bottom of suggestions using <Tab>.
+inoremap <expr><TAB> pumvisible() ? "\<c-n>" : "\<TAB>"
+
+"<TAB>: completion.
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ deoplete#manual_complete()
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~ '\s'
+endfunction

@@ -21,7 +21,7 @@ let g:lightline = {
 \   'active': {
 \     'left': [
 \       ['mode', 'paste'],
-\       ['readonly', 'filename', 'modified'] 
+\       ['readonly', 'filename', 'modified']
 \     ],
 \     'right': [
 \       ['lineinfo'],
@@ -107,3 +107,13 @@ let g:ale_sign_warning = '•-'
 let g:gitgutter_sign_added = '+'
 let g:gitgutter_sign_modified = '•'
 let g:gitgutter_sign_removed = '×'
+
+" ============================================================
+" nerdtree
+" ============================================================
+autocmd vimenter * NERDTree
+
+" ============================================================
+" deoplete
+" ============================================================
+let g:deoplete#enable_at_startup = 1
