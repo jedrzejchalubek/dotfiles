@@ -117,7 +117,9 @@ let NERDTreeMinimalUI = 1
 let NERDTreeQuitOnOpen = 1
 let NERDTreeShowHidden = 1
 let NERDTreeStatusline = ''
+# Start with open nerdtree but main window focused
 autocmd vimenter * NERDTree
+autocmd vimenter * wincmd p
 
 " ============================================================
 " neoclide/coc.nvim
@@ -129,4 +131,4 @@ autocmd vimenter * NERDTree
 set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 
 " Provide COC global extensions
-let g:coc_global_extensions = ['coc-tsserver', 'coc-html', 'coc-css', 'coc-json', 'coc-yaml', 'coc-dictionary', 'coc-word', 'coc-emmet', 'coc-snippets']
+let g:coc_global_extensions = ['coc-tsserver', 'coc-html', 'coc-css', 'coc-json', 'coc-yaml', 'coc-emmet', 'coc-snippets']
