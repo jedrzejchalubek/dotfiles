@@ -4,6 +4,23 @@
 set signcolumn=yes
 
 " ============================================================
+" Give more space for displaying messages.
+" ============================================================
+set cmdheight=2
+
+" ============================================================
+" Don't pass messages to |ins-completion-menu|.
+" ============================================================
+set shortmess+=c
+
+" ============================================================
+" Enable indentation
+" ident by an additional 2 characters on wrapped lines, when line >= 40 characters, put 'showbreak' at start of line
+" ============================================================
+set breakindent
+set breakindentopt=shift:2,min:80,sbr
+
+" ============================================================
 " Enable syntax highlighting
 " ============================================================
 syntax enable

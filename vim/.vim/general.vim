@@ -1,8 +1,18 @@
 " ============================================================
-" python
+" TextEdit might fail if hidden is not set.
 " ============================================================
-let g:python2_host_prog = '/usr/local/bin/python'
-let g:python3_host_prog = '/usr/local/bin/python3'
+set hidden
+
+" ============================================================
+" Prompt about unsaved buffer.
+" ============================================================
+set confirm
+
+" ============================================================
+" Some servers have issues with backup files, see #649.
+" ============================================================
+set nobackup
+set nowritebackup
 
 " ============================================================
 " Set <Leader> key to comma

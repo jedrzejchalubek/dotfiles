@@ -10,3 +10,4 @@ vagrant
 docker
 docker-machine
 neovim
+tmux

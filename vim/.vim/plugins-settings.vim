@@ -4,16 +4,6 @@
 set number relativenumber
 
 " ============================================================
-" mattn/emmet-vim
-" ============================================================
-augroup emmet
-  au!
-  let g:user_emmet_install_global = 0
-  autocmd FileType html,css,sass,scss EmmetInstall
-  autocmd FileType html,css,sass,scss imap <buffer> <expr> <tab> emmet#expandAbbrIntelligent('\<C-y>')
-augroup end
-
-" ============================================================
 " itchyny/lightline.vim
 " ============================================================
 let g:lightline = {
@@ -101,8 +91,14 @@ let g:ale_sign_column_always = 1
 let g:ale_sign_error = '×-'
 let g:ale_sign_warning = '•-'
 
+let g:ale_linter_aliases = {'jsx': ['css', 'javascript']}
+let g:ale_linters = {'jsx': ['stylelint', 'eslint']}
+
 let g:ale_fixers = {}
 let g:ale_fixers.javascript = ['eslint']
+let g:ale_fixers.css = ['stylelint']
+let g:ale_fixers.scss = ['stylelint']
+let g:ale_fixers.sass = ['stylelint']
 let g:ale_fix_on_save = 1
 
 " ============================================================
@@ -115,9 +111,22 @@ let g:gitgutter_sign_removed = '×'
 " ============================================================
 " nerdtree
 " ============================================================
+let NERDTreeAutoDeleteBuffer = 1
+let NERDTreeChDirMode = 2
+let NERDTreeMinimalUI = 1
+let NERDTreeQuitOnOpen = 1
+let NERDTreeShowHidden = 1
+let NERDTreeStatusline = ''
 autocmd vimenter * NERDTree
 
 " ============================================================
-" deoplete
+" neoclide/coc.nvim
 " ============================================================
-let g:deoplete#enable_at_startup = 1
+
+" Add (Neo)Vim's native statusline support.
+" NOTE: Please see `:h coc-status` for integrations with external plugins that
+" provide custom statusline: lightline.vim, vim-airline.
+set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
+
+" Provide COC global extensions
+let g:coc_global_extensions = ['coc-tsserver', 'coc-html', 'coc-css', 'coc-json', 'coc-yaml', 'coc-dictionary', 'coc-word', 'coc-emmet', 'coc-snippets']

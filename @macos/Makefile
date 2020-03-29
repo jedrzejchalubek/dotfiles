@@ -1,4 +1,4 @@
-DIRECTORIES = defaults
+DIRECTORIES = defaults karabiner
 
 default: \
 	link \

@@ -16,3 +16,4 @@ qlstephen
 qlmarkdown
 qlimagesize
 qlvideo
+karabiner-elements
