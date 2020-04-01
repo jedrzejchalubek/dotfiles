@@ -11,3 +11,4 @@ docker
 docker-machine
 neovim
 tmux
+the_silver_searcher
