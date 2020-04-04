@@ -70,6 +70,7 @@ function! GFilesWithFallback()
   return 0
 endfunction
 nnoremap <c-p> :call GFilesWithFallback()<CR>
+nnoremap <c-p><c-p> :History<CR>
 
 " ============================================================
 " NERDTree toggle visibility
