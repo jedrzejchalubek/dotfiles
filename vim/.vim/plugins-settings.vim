@@ -136,4 +136,4 @@ autocmd vimenter * wincmd p
 set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 
 " Provide COC global extensions
-let g:coc_global_extensions = ['coc-tsserver', 'coc-emmet', 'coc-snippets']
+let g:coc_global_extensions = ['coc-tsserver', 'coc-html', 'coc-json', 'coc-css', 'coc-emmet']

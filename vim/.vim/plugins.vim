@@ -14,12 +14,13 @@ endif
 call plug#begin('~/.vim/plugged')
 
 Plug 'w0rp/ale'
-Plug 'yuezk/vim-js'
+Plug 'sheerun/vim-polyglot'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'itchyny/lightline.vim'
 Plug 'itchyny/vim-gitbranch'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'jiangmiao/auto-pairs'
 Plug 'easymotion/vim-easymotion'
