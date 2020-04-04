@@ -75,7 +75,8 @@ nnoremap <c-p><c-p> :History<CR>
 " ============================================================
 " NERDTree toggle visibility
 " ============================================================
-map <c-b> :NERDTreeToggle<CR>
+map <c-k><c-b> :NERDTreeToggle<CR>
+map <c-b> <C-w><C-w>
 
 " ============================================================
 " COC Completions
