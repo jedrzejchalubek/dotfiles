@@ -27,6 +27,20 @@ nnoremap <esc><esc> :set invhlsearch<cr>
 nnoremap / :set hlsearch<cr>/
 
 " ============================================================
+" Set n-character search motion with EasyMotion 
+" ============================================================
+map  / <Plug>(easymotion-sn)
+omap / <Plug>(easymotion-tn)
+map  // <Plug>(easymotion-sl)
+omap // <Plug>(easymotion-tl)
+
+" These `n` & `N` mappings are options. You do not have to map `n` & `N` to EasyMotion.
+" Without these mappings, `n` & `N` works fine. (These mappings just provide
+" different highlight method and have some other features )
+map  n <Plug>(easymotion-next)
+map  N <Plug>(easymotion-prev)
+
+" ============================================================
 " Adds properly idented new line when entering <cr>
 " in HTML tag with empty content, for example:
 "
