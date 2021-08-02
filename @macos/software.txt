@@ -5,14 +5,7 @@ sequel-pro
 visual-studio-code
 virtualbox
 slack
-steam
 transmission
-xld
 bitwarden
-vlc
-qlcolorcode
-qlstephen
-qlmarkdown
-qlimagesize
-qlvideo
 karabiner-elements
+iterm2

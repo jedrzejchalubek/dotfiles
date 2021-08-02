@@ -39,6 +39,9 @@ Let's go through an example process of configuring a new MacOS computer.
 
 ```bash
 git clone git@github.com:jedrzejchalubek/dotfiles.git ~/.dotfiles
+cd ~/.dotfiles
+git submodule init
+git submodule update
 ```
 
 2. Go to the previously cloned directory and run main `Makefile`:
