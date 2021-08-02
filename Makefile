@@ -1,4 +1,4 @@
-DIRECTORIES = xrdb git zsh zplug vim npm tmux
+DIRECTORIES = xrdb git zsh zplug npm
 
 default: link install
 

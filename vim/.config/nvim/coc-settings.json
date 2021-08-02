@@ -1,6 +1,0 @@
-{
-  "suggest.noselect": false,
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact"
-  }
-}

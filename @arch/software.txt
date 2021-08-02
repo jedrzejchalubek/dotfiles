@@ -1,6 +1,0 @@
-google-chrome
-opera
-firefox
-virtualbox
-filezilla
-spotify

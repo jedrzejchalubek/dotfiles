@@ -1,2 +1,0 @@
-otf-fira-code
-ttf-fira-code
