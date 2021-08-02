@@ -1,14 +1,11 @@
 stow
 autojump
 git
-php73
 python
 python3
 node
-composer
 vagrant
 docker
 docker-machine
 neovim
-tmux
 the_silver_searcher

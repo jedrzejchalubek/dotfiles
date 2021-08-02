@@ -2,14 +2,13 @@ google-chrome
 firefox
 opera
 sequel-pro
-sublime-text
+visual-studio-code
 virtualbox
 slack
 steam
 transmission
-handbake
 xld
-lastpass
+bitwarden
 vlc
 qlcolorcode
 qlstephen

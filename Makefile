@@ -1,4 +1,4 @@
-DIRECTORIES = xrdb git zsh zplug npm
+DIRECTORIES = xrdb git zsh zplug
 
 default: link install
 
