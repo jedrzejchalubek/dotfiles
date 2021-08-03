@@ -10,3 +10,4 @@ bitwarden
 karabiner-elements
 iterm2
 alfred
+spotify
